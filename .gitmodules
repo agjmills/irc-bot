@@ -4,3 +4,6 @@
 [submodule "SpiffyTitles"]
 	path = SpiffyTitles
 	url = git@github.com:buttbot-irc/SpiffyTitles.git
+[submodule "SedRegex"]
+	path = SedRegex
+	url = git@github.com:buttbot-irc/SedRegex.git

@@ -1,0 +1,3 @@
+[submodule "Trivia"]
+	path = Trivia
+	url = git@github.com:buttbot-irc/Trivia.git

@@ -7,3 +7,9 @@
 [submodule "SedRegex"]
 	path = SedRegex
 	url = git@github.com:buttbot-irc/SedRegex.git
+[submodule "Weather"]
+	path = Weather
+	url = git@github.com:buttbot-irc/Weather.git
+[submodule "UrbanDictionary"]
+	path = UrbanDictionary
+	url = git@github.com:buttbot-irc/UrbanDictionary.git

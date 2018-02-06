@@ -13,3 +13,12 @@
 [submodule "UrbanDictionary"]
 	path = UrbanDictionary
 	url = git@github.com:buttbot-irc/UrbanDictionary.git
+[submodule "DuckHunt"]
+	path = DuckHunt
+	url = git@github.com:buttbot-irc/DuckHunt.git
+[submodule "IgnoreUnknownPrivateMessages"]
+	path = IgnoreUnknownPrivateMessages
+	url = git@github.com:buttbot-irc/IgnoreUnknownPrivateMessages.git
+[submodule "Remind"]
+	path = Remind
+	url = git@github.com:buttbot-irc/Remind.git

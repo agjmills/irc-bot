@@ -22,3 +22,6 @@
 [submodule "Remind"]
 	path = Remind
 	url = git@github.com:buttbot-irc/Remind.git
+[submodule "Help"]
+	path = Help
+	url = git@github.com:buttbot-irc/Help.git

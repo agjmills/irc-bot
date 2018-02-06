@@ -1,3 +1,6 @@
 [submodule "Trivia"]
 	path = Trivia
 	url = git@github.com:buttbot-irc/Trivia.git
+[submodule "SpiffyTitles"]
+	path = SpiffyTitles
+	url = git@github.com:buttbot-irc/SpiffyTitles.git

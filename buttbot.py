@@ -69,14 +69,14 @@ class Buttbot:
             message = "." #For people who try to crash bots with just spaces
     
         if message.split()[0] == ".weather":
-            bot.send_message(channel, get_weather(message))
+            bot.send_message(channel, self.get_weather(message))
         
         if message.split()[0] == ".source":
             bot.send_message(channel, "My source code is here: https://github.com/buttbot-irc/buttbot")
     
         for message_part in message.split():
             if message_part.startswith("http://") or message_part.startswith("https://"):
-                bot.send_message(channel, get_url_title(message_part))
+                bot.send_message(channel, self.get_url_title(message_part))
 
 
     def on_private_message(self, bot, sender, message):

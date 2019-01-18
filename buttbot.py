@@ -46,7 +46,8 @@ class Buttbot:
         if len(message.split()) > 1:
             weather_data = requests.get("http://api.apixu.com/v1/current.json",params={"key":self.configuration["weather_api_key"],"q":message.split(" ", 1)[1]}).json()
         if not 'error' in weather_data:
-            return "The weather in {} is {} and {} degrees.".format(weather_data["location"]["name"], weather_data["current"]["condition"]["text"], weather_data["current"]["temp_c"])
+            weather_string = "\"{}\" and the temperature is {}°C ({}°F)".format(weather_data["current"]["condition"]["text"],weather_data["current"]["temp_c"], weather_data["current"]["temp_f"])
+            return "The weather in {} is {}.".format(weather_data["location"]["name"], weather_string)
         else:
             return "{}".format(weather_data["error"]["message"])
 

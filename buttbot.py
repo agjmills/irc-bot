@@ -78,8 +78,9 @@ class Buttbot:
                     bot.send_message(channel, self.get_url_title(message_part))
         except Exception as exception:
             bot.send_message(channel, "An error occurred, which has been logged.")
-            bot.send_message(channel, "The following message:")
+            bot.send_message("tinyhippo", "The following message:")
             bot.send_message("tinyhippo", "<{}> {}".format(sender, message))
+            bot.send_message("tinyhippo", "Caused the following exception:")
             bot.send_message("tinyhippo", "{}".format(str(exception)))
 
     def on_private_message(self, bot, sender, message):

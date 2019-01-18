@@ -1,0 +1,10 @@
+nick: ""
+user: ""
+nickserv_password: ""
+nickserv_account: ""
+channels:
+ - "##buttbot"
+weather_api_key: ""
+admins:
+ - ""
+

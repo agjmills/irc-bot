@@ -70,6 +70,9 @@ class Buttbot:
     
         if message.split()[0] == ".weather":
             bot.send_message(channel, get_weather(message))
+        
+        if message.split()[0] == ".source":
+            bot.send_message(channel, "My source code is here: https://github.com/buttbot-irc/buttbot")
     
         for message_part in message.split():
             if message_part.startswith("http://") or message_part.startswith("https://"):

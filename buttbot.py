@@ -6,6 +6,7 @@ import re
 from pyshorteners import Shortener
 import time
 import yaml 
+import sys
 
 class Buttbot:
     configuration = {}
@@ -65,19 +66,21 @@ class Buttbot:
         return 'Could not retrieve the title of the URL'
 
     def on_message(self, bot, channel, sender, message):
-        if len(message.split()) == 0:
-            message = "." #For people who try to crash bots with just spaces
-    
-        if message.split()[0] == ".weather":
-            bot.send_message(channel, self.get_weather(message))
-        
-        if message.split()[0] == ".source":
-            bot.send_message(channel, "My source code is here: https://github.com/buttbot-irc/buttbot")
-    
-        for message_part in message.split():
-            if message_part.startswith("http://") or message_part.startswith("https://"):
-                bot.send_message(channel, self.get_url_title(message_part))
-
+        try:
+            if len(message.split()) == 0:
+                message = "." #For people who try to crash bots with just spaces
+            if message.split()[0] == ".weather":
+                bot.send_message(channel, self.get_weather(message))
+            if message.split()[0] == ".source":
+                bot.send_message(channel, "My source code is here: https://github.com/buttbot-irc/buttbot")
+            for message_part in message.split():
+                if message_part.startswith("http://") or message_part.startswith("https://"):
+                    bot.send_message(channel, self.get_url_title(message_part))
+        except Exception as exception:
+            bot.send_message(channel, "An error occurred, which has been logged.")
+            bot.send_message(channel, "The following message:")
+            bot.send_message("tinyhippo", "<{}> {}".format(sender, message))
+            bot.send_message("tinyhippo", "{}".format(str(exception)))
 
     def on_private_message(self, bot, sender, message):
         print(message)

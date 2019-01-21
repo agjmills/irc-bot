@@ -58,7 +58,7 @@ class Buttbot:
 
     def get_url_title(self, channel, url):
         if url.endswith('mp3') is False:
-            data = requests.get(url)
+            html = requests.get(url).text
             title_match = re.search("<title>(.*?)</title>", html)
             try:
                 shortener = Shortener('Isgd')

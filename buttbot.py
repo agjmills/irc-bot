@@ -5,6 +5,7 @@ import re
 from pyshorteners import Shortener
 import time
 import yaml 
+import os
 import sys
 import pkgutil
 import Plugins
@@ -56,7 +57,7 @@ class Buttbot:
             bot.join_channel(channel)
             time.sleep(1)
 
-    def get_url_title(self, channel, url):
+    def get_url_title(self, channel, bot, url):
         if url.endswith('mp3') is False:
             html = requests.get(url).text
             title_match = re.search("<title>(.*?)</title>", html)
@@ -82,16 +83,20 @@ class Buttbot:
                 bot.send_message(channel, "My source code is here: https://github.com/buttbot-irc/buttbot")
             for message_part in message.split():
                 if message_part.startswith("http://") or message_part.startswith("https://"):
-                    self.get_url_title(channel, message_part)
+                    self.get_url_title(channel, bot, message_part)
         except Exception as exception:
             bot.send_message(channel, "An error occurred, which has been logged.")
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
             bot.send_message("tinyhippo", "The following message:")
             bot.send_message("tinyhippo", "<{}> {}".format(sender, message))
             bot.send_message("tinyhippo", "Caused the following exception:")
             bot.send_message("tinyhippo", "{}".format(str(exception)))
+            bot.send_message("tinyhippo", "in file {} on line {}".format(fname, exc_tb.tb_lineno))
 
     def on_private_message(self, bot, sender, message):
         print(message)
 
 buttbot = Buttbot()
+
 

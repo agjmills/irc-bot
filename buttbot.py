@@ -60,33 +60,12 @@ class Buttbot:
             bot.join_channel(channel)
             time.sleep(1)
 
-    def get_url_title(self, channel, bot, url):
-        if url.endswith('mp3') is False:
-            html = requests.get(url).text
-            title_match = re.search("<title>(.*?)</title>", html)
-            try:
-                shortener = Shortener('Isgd')
-                short_url = shortener.short(url)
-            except:
-                short_url = None
-    
-            if title_match and short_url:
-                bot.send_message(channel, "^ {} → {}".format(title_match.group(1), short_url))
-                return
-            if title_match and short_url is None:
-                bot.send_message(channel, "^ {}".format(title_match.group(1)))
-                return
-            bot.send_message(channel, 'Could not retrieve the title of the URL')
-
     def on_message(self, bot, channel, sender, message):
         try:
             if len(message.split()) == 0:
                 message = "." #For people who try to crash bots with just spaces
             if message.split()[0] == ".source":
                 bot.send_message(channel, "My source code is here: https://github.com/buttbot-irc/buttbot")
-            for message_part in message.split():
-                if message_part.startswith("http://") or message_part.startswith("https://"):
-                    self.get_url_title(channel, bot, message_part)
         except Exception as exception:
             bot.send_message(channel, "An error occurred, which has been logged.")
             exc_type, exc_obj, exc_tb = sys.exc_info()

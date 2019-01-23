@@ -28,11 +28,14 @@ class Buttbot:
         self.bot.on_welcome.append(self.on_welcome)
         self.bot.on_public_message.append(self.on_message)
         self.bot.connect("irc.freenode.net")
-        try:
-            self.bot.run_loop()
-        except Exception as exception:
-            self.bot.send_message("tinyhippo", "An error occurred, which has been logged.")
-            self.bot.send_message("tinyhippo", "{}".format(str(exception)))
+        #try:
+        self.bot.run_loop()
+        #except Exception as exception:
+        #    exc_type, exc_obj, exc_tb = sys.exc_info()
+        #    fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        #    self.bot.send_message("tinyhippo", "An error occurred, which has been logged.")
+        #    self.bot.send_message("tinyhippo", "{}".format(str(exception)))
+        #    self.bot.send_message("tinyhippo", "in file {} on line {}".format(fname, exc_tb.tb_lineno))
  
     def import_plugins(self, pkg_dir):
         for (module_loader, name, ispkg) in pkgutil.iter_modules([pkg_dir]):
@@ -87,12 +90,13 @@ class Buttbot:
         except Exception as exception:
             bot.send_message(channel, "An error occurred, which has been logged.")
             exc_type, exc_obj, exc_tb = sys.exc_info()
-            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-            bot.send_message("tinyhippo", "The following message:")
-            bot.send_message("tinyhippo", "<{}> {}".format(sender, message))
-            bot.send_message("tinyhippo", "Caused the following exception:")
-            bot.send_message("tinyhippo", "{}".format(str(exception)))
-            bot.send_message("tinyhippo", "in file {} on line {}".format(fname, exc_tb.tb_lineno))
+            if len(os.path.split(exc_tb.tb_frame.f_code.co_filename)) > 0:
+                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                bot.send_message("tinyhippo", "The following message:")
+                bot.send_message("tinyhippo", "<{}> {}".format(sender, message))
+                bot.send_message("tinyhippo", "Caused the following exception:")
+                bot.send_message("tinyhippo", "{}".format(str(exception)))
+                bot.send_message("tinyhippo", "in file {} on line {}".format(fname, exc_tb.tb_lineno))
 
     def on_private_message(self, bot, sender, message):
         print(message)

@@ -7,6 +7,8 @@ configuration = {}
 
 def on_message(bot, channel, sender, message):
     configuration = configure()
+    if len(message.split()) == 0:
+        message = "." #For people who try to crash bots with just spaces
     if message.split()[0] == ".weather":
         bot.send_message(channel, get_weather(bot, configuration, message))
     if message.split()[0] == ".forecast":

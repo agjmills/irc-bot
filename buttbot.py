@@ -15,7 +15,7 @@ import importlib
 class Buttbot:
     configuration = {}
     bot = None
-    modules = []
+    modules = {}
 
     def __init__(self):
         self.configure()
@@ -26,6 +26,7 @@ class Buttbot:
         self.import_plugins('Plugins')
         self.bot.on_connect.append(self.on_connect)
         self.bot.on_welcome.append(self.on_welcome)
+        self.bot.on_public_message.append(self.on_message)
         self.bot.connect("irc.freenode.net")
         try:
             self.bot.run_loop()
@@ -40,6 +41,7 @@ class Buttbot:
         for (module_loader, name, ispkg) in pkgutil.iter_modules([pkg_dir]):
             mod = importlib.import_module('.' + name, pkg_dir)
             self.bot.on_public_message.append(mod.on_message)
+            self.modules[name] = mod
     
     def configure(self):
         with open("conf.yml", 'r') as stream:
@@ -58,6 +60,21 @@ class Buttbot:
         for channel in self.configuration["channels"]:
             bot.join_channel(channel)
             time.sleep(1)
+
+    def on_message(self, bot, channel, sender, message): 
+        if len(message.split()) == 0:
+            message = "." #For people who try to crash bots with just spaces
+        if message.split()[0] == ".reload" and sender == "tinyhippo":
+            plugin = message.split(" ", 1)[1]
+            if self.reload_plugin(plugin):
+                self.bot.send_message(channel, "{} was successfully reloaded".format(plugin))
+
+    def reload_plugin(self, plugin):
+        if plugin in self.modules:
+            importlib.reload(self.modules[plugin])
+            return True
+        return False
+        
 
     def on_private_message(self, bot, sender, message):
         print(message)

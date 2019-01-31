@@ -1,0 +1,24 @@
+{
+    "name": "agjmills/buttbot",
+    "type": "project",
+    "require": {
+        "phergie/phergie-irc-bot-react": "^2.1",
+        "phergie/phergie-irc-plugin-react-autojoin": "^2.0",
+        "phergie/phergie-irc-plugin-react-command": "^2.0",
+        "phergie/phergie-irc-plugin-react-nickserv": "^2.0",
+        "pschwisow/phergie-irc-plugin-react-altnick": "^2.0",
+        "kitetail/zttp": "^0.4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Mills",
+            "email": "alex@asdfx.us"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Buttbot\\": "src"
+        }
+    }
+}

@@ -17,7 +17,7 @@ return [
   ],
   'plugins' => [
     new \Phergie\Irc\Plugin\React\Command\Plugin(['prefix' => '.']),
-    new \Phergie\Irc\Plugin\React\AutoJoin\Plugin(['channels' => '#buttbot']),
+    new \Phergie\Irc\Plugin\React\AutoJoin\Plugin(['channels' => '#botters']),
     new \Phergie\Irc\Plugin\React\NickServ\Plugin([
          'password' => '',
          'botnick' => 'NickServ',
@@ -27,7 +27,7 @@ return [
          'ghostpattern' => '/has been ghosted/',
     ]),
     new \PSchwisow\Phergie\Plugin\AltNick\Plugin([
-        'nicks' => ['buttbot', 'buttbot_', 'gluteus', 'gluteus_',],
+        'nicks' => ['botbot', 'botbot_', 'gluteus', 'gluteus_',],
         'recovery' => true,
     ]),
     new \Buttbot\Plugins\Weather(['apiKey' => '']),

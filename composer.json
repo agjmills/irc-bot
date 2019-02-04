@@ -8,7 +8,8 @@
         "phergie/phergie-irc-plugin-react-nickserv": "^2.0",
         "pschwisow/phergie-irc-plugin-react-altnick": "^2.0",
         "kitetail/zttp": "^0.4.0",
-        "asdfx/phergie-irc-plugin-react-apixu-weather": "dev-master"
+        "asdfx/phergie-irc-plugin-react-apixu-weather": "dev-master",
+        "asdfx/phergie-irc-plugin-react-url-title-shortener": "dev-master"
     },
     "license": "MIT",
     "authors": [
@@ -16,10 +17,5 @@
             "name": "Alex Mills",
             "email": "alex@asdfx.us"
         }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Buttbot\\": "src"
-        }
-    }
+    ]
 }

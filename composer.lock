@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1391b113b9c31829bcbd0cb4de148708",
+    "content-hash": "798fd7f8de09e408bb2204079899b0de",
     "packages": [
         {
             "name": "asdfx/phergie-irc-plugin-react-apixu-weather",
@@ -46,6 +46,46 @@
             ],
             "description": "Phergie plugin for returning weather information for a given location.",
             "time": "2019-02-04T13:21:15+00:00"
+        },
+        {
+            "name": "asdfx/phergie-irc-plugin-react-url-title-shortener",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/agjmills/phergie-irc-plugin-react-url-title-shortener.git",
+                "reference": "e6a3b3e7e0a14357eda0d700b402ff65f520e06f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/agjmills/phergie-irc-plugin-react-url-title-shortener/zipball/e6a3b3e7e0a14357eda0d700b402ff65f520e06f",
+                "reference": "e6a3b3e7e0a14357eda0d700b402ff65f520e06f",
+                "shasum": ""
+            },
+            "require": {
+                "kitetail/zttp": "^0.4.0",
+                "phergie/phergie-irc-bot-react": "~2",
+                "phergie/phergie-irc-plugin-react-command": "~2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Asdfx\\Phergie\\Plugin\\URLTitle\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Mills",
+                    "email": "alex@asdfx.us"
+                }
+            ],
+            "time": "2019-02-04T16:10:56+00:00"
         },
         {
             "name": "evenement/evenement",
@@ -1384,16 +1424,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v4.2.2",
+            "version": "v4.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "85bde661b178173d85c6f11ea9d03b61d1212bb2"
+                "reference": "223bda89f9be41cf7033eeaf11bc61a280489c17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/85bde661b178173d85c6f11ea9d03b61d1212bb2",
-                "reference": "85bde661b178173d85c6f11ea9d03b61d1212bb2",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/223bda89f9be41cf7033eeaf11bc61a280489c17",
+                "reference": "223bda89f9be41cf7033eeaf11bc61a280489c17",
                 "shasum": ""
             },
             "require": {
@@ -1456,7 +1496,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2019-01-03T09:07:35+00:00"
+            "time": "2019-01-30T11:44:30+00:00"
         },
         {
             "name": "tightenco/collect",
@@ -1513,7 +1553,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "asdfx/phergie-irc-plugin-react-apixu-weather": 20
+        "asdfx/phergie-irc-plugin-react-apixu-weather": 20,
+        "asdfx/phergie-irc-plugin-react-url-title-shortener": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

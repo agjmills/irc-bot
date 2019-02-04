@@ -4,8 +4,49 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2816aade65e6fdc3592916633cfbd3fd",
+    "content-hash": "1391b113b9c31829bcbd0cb4de148708",
     "packages": [
+        {
+            "name": "asdfx/phergie-irc-plugin-react-apixu-weather",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/agjmills/phergie-irc-plugin-react-apixu-weather.git",
+                "reference": "c2bcee48897d7018bf071a891f264a387fae2c2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/agjmills/phergie-irc-plugin-react-apixu-weather/zipball/c2bcee48897d7018bf071a891f264a387fae2c2f",
+                "reference": "c2bcee48897d7018bf071a891f264a387fae2c2f",
+                "shasum": ""
+            },
+            "require": {
+                "kitetail/zttp": "^0.4.0",
+                "phergie/phergie-irc-bot-react": "~2",
+                "phergie/phergie-irc-plugin-react-command": "~2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Asdfx\\Phergie\\Plugin\\Weather\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Mills",
+                    "email": "alex@asdfx.us"
+                }
+            ],
+            "description": "Phergie plugin for returning weather information for a given location.",
+            "time": "2019-02-04T13:21:15+00:00"
+        },
         {
             "name": "evenement/evenement",
             "version": "v3.0.1",
@@ -1471,7 +1512,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "asdfx/phergie-irc-plugin-react-apixu-weather": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

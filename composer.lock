@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "798fd7f8de09e408bb2204079899b0de",
+    "content-hash": "e159eb3e65f9df7961753138d1e75133",
     "packages": [
         {
             "name": "asdfx/phergie-irc-plugin-react-apixu-weather",
@@ -48,6 +48,48 @@
             "time": "2019-02-04T13:21:15+00:00"
         },
         {
+            "name": "asdfx/phergie-irc-plugin-react-urban-dictionary",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/agjmills/phergie-irc-plugin-react-urban-dictionary.git",
+                "reference": "1ac6edc5c3863d92718581635376be16a0dd687d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/agjmills/phergie-irc-plugin-react-urban-dictionary/zipball/1ac6edc5c3863d92718581635376be16a0dd687d",
+                "reference": "1ac6edc5c3863d92718581635376be16a0dd687d",
+                "shasum": ""
+            },
+            "require": {
+                "asdfx/urban-dictionary": "^1.0",
+                "kitetail/zttp": "^0.4.0",
+                "phergie/phergie-irc-bot-react": "~2",
+                "phergie/phergie-irc-plugin-react-command": "~2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Asdfx\\Phergie\\Plugin\\UrbanDictionary\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Mills",
+                    "email": "alex@asdfx.us"
+                }
+            ],
+            "description": "Phergie plugin for returning entries from urban dictionary.",
+            "time": "2019-02-05T20:22:13+00:00"
+        },
+        {
             "name": "asdfx/phergie-irc-plugin-react-url-title-shortener",
             "version": "dev-master",
             "source": {
@@ -86,6 +128,45 @@
                 }
             ],
             "time": "2019-02-04T16:10:56+00:00"
+        },
+        {
+            "name": "asdfx/urban-dictionary",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/agjmills/urban-dictionary.git",
+                "reference": "48bdab3d2d5ed0809f0c7643ca987da616996590"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/agjmills/urban-dictionary/zipball/48bdab3d2d5ed0809f0c7643ca987da616996590",
+                "reference": "48bdab3d2d5ed0809f0c7643ca987da616996590",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Asdfx\\UrbanDictionary\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Mills",
+                    "email": "alex@asdfx.us"
+                }
+            ],
+            "description": "A package to retrieve entries from Urban Dictionary",
+            "time": "2019-02-05T20:16:59+00:00"
         },
         {
             "name": "evenement/evenement",

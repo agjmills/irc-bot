@@ -9,7 +9,8 @@
         "pschwisow/phergie-irc-plugin-react-altnick": "^2.0",
         "kitetail/zttp": "^0.4.0",
         "asdfx/phergie-irc-plugin-react-apixu-weather": "dev-master",
-        "asdfx/phergie-irc-plugin-react-url-title-shortener": "dev-master"
+        "asdfx/phergie-irc-plugin-react-url-title-shortener": "dev-master",
+        "asdfx/phergie-irc-plugin-react-urban-dictionary": "^1.0"
     },
     "license": "MIT",
     "authors": [

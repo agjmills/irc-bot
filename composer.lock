@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e159eb3e65f9df7961753138d1e75133",
+    "content-hash": "0902d24e8d95c7b9a81cd33c8eb504ee",
     "packages": [
         {
             "name": "asdfx/phergie-irc-plugin-react-apixu-weather",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/agjmills/phergie-irc-plugin-react-apixu-weather.git",
@@ -49,16 +49,16 @@
         },
         {
             "name": "asdfx/phergie-irc-plugin-react-urban-dictionary",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/agjmills/phergie-irc-plugin-react-urban-dictionary.git",
-                "reference": "1ac6edc5c3863d92718581635376be16a0dd687d"
+                "reference": "d83d5498249fa48905f39c1172de3b1f5c7cace8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/agjmills/phergie-irc-plugin-react-urban-dictionary/zipball/1ac6edc5c3863d92718581635376be16a0dd687d",
-                "reference": "1ac6edc5c3863d92718581635376be16a0dd687d",
+                "url": "https://api.github.com/repos/agjmills/phergie-irc-plugin-react-urban-dictionary/zipball/d83d5498249fa48905f39c1172de3b1f5c7cace8",
+                "reference": "d83d5498249fa48905f39c1172de3b1f5c7cace8",
                 "shasum": ""
             },
             "require": {
@@ -87,20 +87,20 @@
                 }
             ],
             "description": "Phergie plugin for returning entries from urban dictionary.",
-            "time": "2019-02-05T20:22:13+00:00"
+            "time": "2019-02-05T20:24:52+00:00"
         },
         {
             "name": "asdfx/phergie-irc-plugin-react-url-title-shortener",
-            "version": "dev-master",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/agjmills/phergie-irc-plugin-react-url-title-shortener.git",
-                "reference": "e6a3b3e7e0a14357eda0d700b402ff65f520e06f"
+                "reference": "eaf42dc555658a732e7b9514ccd6ec72460d2ea8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/agjmills/phergie-irc-plugin-react-url-title-shortener/zipball/e6a3b3e7e0a14357eda0d700b402ff65f520e06f",
-                "reference": "e6a3b3e7e0a14357eda0d700b402ff65f520e06f",
+                "url": "https://api.github.com/repos/agjmills/phergie-irc-plugin-react-url-title-shortener/zipball/eaf42dc555658a732e7b9514ccd6ec72460d2ea8",
+                "reference": "eaf42dc555658a732e7b9514ccd6ec72460d2ea8",
                 "shasum": ""
             },
             "require": {
@@ -127,7 +127,7 @@
                     "email": "alex@asdfx.us"
                 }
             ],
-            "time": "2019-02-04T16:10:56+00:00"
+            "time": "2019-02-05T20:33:40+00:00"
         },
         {
             "name": "asdfx/urban-dictionary",
@@ -1581,16 +1581,16 @@
         },
         {
             "name": "tightenco/collect",
-            "version": "v5.7.24",
+            "version": "v5.7.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/collect.git",
-                "reference": "e841daa7959b3017f8a86e0ec899c042591c5dc3"
+                "reference": "bcdb1d4ca989a3aaa74aeac67c8e44ccf1761b9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/collect/zipball/e841daa7959b3017f8a86e0ec899c042591c5dc3",
-                "reference": "e841daa7959b3017f8a86e0ec899c042591c5dc3",
+                "url": "https://api.github.com/repos/tightenco/collect/zipball/bcdb1d4ca989a3aaa74aeac67c8e44ccf1761b9d",
+                "reference": "bcdb1d4ca989a3aaa74aeac67c8e44ccf1761b9d",
                 "shasum": ""
             },
             "require": {
@@ -1627,16 +1627,13 @@
                 "collection",
                 "laravel"
             ],
-            "time": "2019-01-29T17:59:42+00:00"
+            "time": "2019-02-05T15:00:41+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "asdfx/phergie-irc-plugin-react-apixu-weather": 20,
-        "asdfx/phergie-irc-plugin-react-url-title-shortener": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

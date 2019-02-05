@@ -10,7 +10,7 @@
         "kitetail/zttp": "^0.4.0",
         "asdfx/phergie-irc-plugin-react-apixu-weather": "^1.0",
         "asdfx/phergie-irc-plugin-react-url-title-shortener": "^1.0",
-        "asdfx/phergie-irc-plugin-react-urban-dictionary": "^1.0"
+        "asdfx/phergie-irc-plugin-react-urban-dictionary": "^1.0.3"
     },
     "license": "MIT",
     "authors": [

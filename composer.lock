@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0902d24e8d95c7b9a81cd33c8eb504ee",
+    "content-hash": "ca636dd03ea547815a7a6c97fdd99420",
     "packages": [
         {
             "name": "asdfx/phergie-irc-plugin-react-apixu-weather",
@@ -49,16 +49,16 @@
         },
         {
             "name": "asdfx/phergie-irc-plugin-react-urban-dictionary",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/agjmills/phergie-irc-plugin-react-urban-dictionary.git",
-                "reference": "a68f08b878528c288cc3938c4f4d691a8139a9c8"
+                "reference": "72cb1a1d889ec6f9fa67564532d881487d00c94d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/agjmills/phergie-irc-plugin-react-urban-dictionary/zipball/a68f08b878528c288cc3938c4f4d691a8139a9c8",
-                "reference": "a68f08b878528c288cc3938c4f4d691a8139a9c8",
+                "url": "https://api.github.com/repos/agjmills/phergie-irc-plugin-react-urban-dictionary/zipball/72cb1a1d889ec6f9fa67564532d881487d00c94d",
+                "reference": "72cb1a1d889ec6f9fa67564532d881487d00c94d",
                 "shasum": ""
             },
             "require": {
@@ -87,7 +87,7 @@
                 }
             ],
             "description": "Phergie plugin for returning entries from urban dictionary.",
-            "time": "2019-02-05T20:44:31+00:00"
+            "time": "2019-02-05T20:48:49+00:00"
         },
         {
             "name": "asdfx/phergie-irc-plugin-react-url-title-shortener",

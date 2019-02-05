@@ -49,16 +49,16 @@
         },
         {
             "name": "asdfx/phergie-irc-plugin-react-urban-dictionary",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/agjmills/phergie-irc-plugin-react-urban-dictionary.git",
-                "reference": "d83d5498249fa48905f39c1172de3b1f5c7cace8"
+                "reference": "a68f08b878528c288cc3938c4f4d691a8139a9c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/agjmills/phergie-irc-plugin-react-urban-dictionary/zipball/d83d5498249fa48905f39c1172de3b1f5c7cace8",
-                "reference": "d83d5498249fa48905f39c1172de3b1f5c7cace8",
+                "url": "https://api.github.com/repos/agjmills/phergie-irc-plugin-react-urban-dictionary/zipball/a68f08b878528c288cc3938c4f4d691a8139a9c8",
+                "reference": "a68f08b878528c288cc3938c4f4d691a8139a9c8",
                 "shasum": ""
             },
             "require": {
@@ -87,7 +87,7 @@
                 }
             ],
             "description": "Phergie plugin for returning entries from urban dictionary.",
-            "time": "2019-02-05T20:24:52+00:00"
+            "time": "2019-02-05T20:44:31+00:00"
         },
         {
             "name": "asdfx/phergie-irc-plugin-react-url-title-shortener",

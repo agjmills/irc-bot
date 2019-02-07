@@ -10,13 +10,20 @@
         "kitetail/zttp": "^0.4.0",
         "asdfx/phergie-irc-plugin-react-apixu-weather": "^1.0",
         "asdfx/phergie-irc-plugin-react-url-title-shortener": "^1.0",
-        "asdfx/phergie-irc-plugin-react-urban-dictionary": "^1.0"
+        "asdfx/phergie-irc-plugin-react-urban-dictionary": "^1.0",
+        "asdfx/phergie-irc-plugin-react-trivia": "@dev"
     },
     "license": "MIT",
     "authors": [
         {
             "name": "Alex Mills",
             "email": "alex@asdfx.us"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/home/alex/Development/phergie-irc-plugin-react-trivia"
         }
     ]
 }

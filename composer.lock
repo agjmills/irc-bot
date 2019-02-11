@@ -128,16 +128,16 @@
         },
         {
             "name": "asdfx/phergie-irc-plugin-react-url-title-shortener",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/agjmills/phergie-irc-plugin-react-url-title-shortener.git",
-                "reference": "eaf42dc555658a732e7b9514ccd6ec72460d2ea8"
+                "reference": "c4e9e9a53b58fb102ee4e527be10c7b007d8b0ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/agjmills/phergie-irc-plugin-react-url-title-shortener/zipball/eaf42dc555658a732e7b9514ccd6ec72460d2ea8",
-                "reference": "eaf42dc555658a732e7b9514ccd6ec72460d2ea8",
+                "url": "https://api.github.com/repos/agjmills/phergie-irc-plugin-react-url-title-shortener/zipball/c4e9e9a53b58fb102ee4e527be10c7b007d8b0ba",
+                "reference": "c4e9e9a53b58fb102ee4e527be10c7b007d8b0ba",
                 "shasum": ""
             },
             "require": {
@@ -164,7 +164,7 @@
                     "email": "alex@asdfx.us"
                 }
             ],
-            "time": "2019-02-05T20:33:40+00:00"
+            "time": "2019-02-11T08:44:57+00:00"
         },
         {
             "name": "asdfx/urban-dictionary",

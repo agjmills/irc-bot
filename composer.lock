@@ -49,16 +49,16 @@
         },
         {
             "name": "asdfx/phergie-irc-plugin-react-trivia",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/agjmills/phergie-irc-plugin-react-trivia.git",
-                "reference": "3f780dc4e8d15cde007c7752be9bcbd98d8e06ac"
+                "reference": "058346359f40b828a53d75a1f69daa92ff72510c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/agjmills/phergie-irc-plugin-react-trivia/zipball/3f780dc4e8d15cde007c7752be9bcbd98d8e06ac",
-                "reference": "3f780dc4e8d15cde007c7752be9bcbd98d8e06ac",
+                "url": "https://api.github.com/repos/agjmills/phergie-irc-plugin-react-trivia/zipball/058346359f40b828a53d75a1f69daa92ff72510c",
+                "reference": "058346359f40b828a53d75a1f69daa92ff72510c",
                 "shasum": ""
             },
             "require": {
@@ -82,7 +82,7 @@
                 }
             ],
             "description": "A trivia bot for Phergie IRC Bot",
-            "time": "2019-02-11T12:04:35+00:00"
+            "time": "2019-02-11T12:38:35+00:00"
         },
         {
             "name": "asdfx/phergie-irc-plugin-react-urban-dictionary",
